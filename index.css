@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Cherry+Swash:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Dongle:wght@300;400;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Fjalla+One&family=Fredoka+One&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,800;1,200;1,300;1,400;1,500;1,700;1,800&family=Lexend+Deca:wght@300;400;500;600;700;800;900&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,600;0,700;0,900;1,100;1,600;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,400;1,900&family=Righteous&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,700;1,900&family=Supermercado+One&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  content: "";
+  clear: both;
+  margin: 0;
+  text-align: center;
+}
+div {
+  text-align: center;
+  justify-content: center;
+}
+img {
+  width: 100%;
+}
+.imgDiv {
+  width: 30%;
+}
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  /* color: #ffffff; */
+}
+
+.main-div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.left-div {
+  background-color: lightseagreen;
+  width: 100%;
+  float: left;
+}
+
+.right-div {
+  background-color: lightseagreen;
+  width: 100%;
+  float: right;
+  border-left: 10px solid gray;
+}
+
+.imgDiv {
+  margin: 3em;
+}
+.fixedDiv {
+  position: absolute;
+  background-color: rgb(193, 223, 213);
+
+  padding: 2em;
+  width: 100%;
+}
+.fP {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.fixedDiv2 {
+  position: absolute;
+  top: 85%;
+  background-color: transparent;
+  padding: 2em;
+}
+
+.one {
+  float: right;
+}
+
+.left-div,
+.right-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ____________________ BUTTON ____________________ */
+.button-6 {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+/* winner css */
+
+.winner {
+  background-color: #65de2c;
+}
+.draw {
+  background-color: #fcba03;
+}
+.loser {
+  background-color: red;
+}
+.winner-anim {
+  background-image: url(https://rb.gy/ighyas);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* party BG = https://rb.gy/ighyas */
+.winner-border {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  border: 4px;
+  border-radius: 10px;
+  padding: 20px;
+  /* animation: rainbow 2s infinite linear; */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  animation: glow 1s ease-in-out infinite;
+}
+
+/* @keyframes rainbow {
+  0% {
+    border-color: red;
+  }
+  16.7% {
+    border-color: orange;
+  }
+  33.3% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: green;
+  }
+  66.7% {
+    border-color: blue;
+  }
+  83.3% {
+    border-color: indigo;
+  }
+  100% {
+    border-color: violet;
+  }
+} */
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+}
